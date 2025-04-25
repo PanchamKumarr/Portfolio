@@ -47,8 +47,13 @@ export const metadata = {
   description:
     "Welcome to the portfolio of Pancham Kumar. I am a software developer passionate about problem-solving and creating innovative solutions. With experience in full-stack development and cloud technologies, I aim to make impactful contributions to tech projects. I enjoy working with JavaScript and love exploring new tech stacks.",
   icons: {
-    icon: 'data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>P</text></svg>',
-  },
+    icon: [
+      { url: '/Images/myImage.JPG', type: 'image/jpg' }
+    ],
+    apple: [
+      { url: '/Images/myImage.JPG', type: 'image/jpg' }
+    ]
+  }
 };
 
 export default function RootLayout({ children }) {
