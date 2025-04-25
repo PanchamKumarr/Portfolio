@@ -24,4 +24,6 @@ module.exports = {
       },
     ],
   },
+  basePath: '/Portfolio',
+  output: 'export',
 }
