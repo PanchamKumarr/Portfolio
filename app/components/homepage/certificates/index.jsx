@@ -1,6 +1,7 @@
 // @flow strict
 import Link from 'next/link';
 import { FaArrowRight } from 'react-icons/fa';
+import Image from 'next/image';
 
 function Certificates() {
   // Static certificate data
@@ -53,9 +54,11 @@ function Certificates() {
           certificates.map((cert, i) => (
             <div key={i} className="border border-[#1d293a] hover:border-[#464c6a] transition-all duration-500 bg-[#1b203e] rounded-lg relative group">
               <div className="h-44 lg:h-52 w-auto cursor-pointer overflow-hidden rounded-t-lg">
-                <img
+                <Image
                   src={cert.image}
                   alt={cert.title}
+                  width={500}
+                  height={300}
                   className='h-full w-full group-hover:scale-110 transition-all duration-300'
                 />
               </div>
